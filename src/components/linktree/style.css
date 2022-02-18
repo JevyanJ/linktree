@@ -2,7 +2,11 @@
 
 .bg {
   animation: slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  background-image: linear-gradient(
+    -60deg,
+    rgb(0, 4, 255) 50%,
+    rgb(204, 51, 191) 50%
+  );
   bottom: 0;
   left: -50%;
   opacity: 0.5;
@@ -101,7 +105,7 @@ h1 {
   border-radius: 10px;
   text-align: center;
   width: 20em;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #17e9de, #2385d5);
   background-size: 400% 400%;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.22),
     0px 41.7776px 33.4221px rgba(0, 0, 0, 0.158148),
