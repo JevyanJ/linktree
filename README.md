@@ -1,6 +1,14 @@
-# Website
+# LinkTree
 
-Just my web
+Just my LinkTree web
+
+## Uplodad to GCS
+
+```sh
+yarn build
+cd build
+gsutil -r . gs://jevyanj-website/
+```
 
 ## References
 
