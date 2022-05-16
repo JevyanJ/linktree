@@ -1,6 +1,6 @@
 import React from "react";
 import avatar from "../../assets/avatar.jpeg";
-import "./style.css";
+import "./style.scss";
 
 const rrss = [
   {
@@ -32,7 +32,12 @@ const rrss = [
 
 function rrss_button(element) {
   return (
-    <a href={element["link"]} target="_blank" class="link-items">
+    <a
+      href={element["link"]}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="link-items"
+    >
       <i class={element["icon"]}></i>
       <div>{element["name"]}</div>
     </a>
@@ -42,15 +47,13 @@ function rrss_button(element) {
 export default function LinkTree() {
   return (
     <div>
-      <div class="bg"></div>
-      <div class="bg bg2"></div>
-      <div class="bg bg3"></div>
       <div class="content">
         <img src={avatar} class="profile-pic" alt="profile pic" />
         <a
           href="https://www.twitch.tv/jevyanj"
           target="_blank"
           class="username"
+          rel="noopener noreferrer"
         >
           @JevyanJ
         </a>
