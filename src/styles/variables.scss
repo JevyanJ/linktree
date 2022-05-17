@@ -1,0 +1,29 @@
+$primary_font_family: "Montserrat", sans-serif, monospace;
+
+$primary_color: rgba(64, 30, 75);
+$secondary_color: rgba(200, 148, 218, 0.85);
+$background_color: rgba(255, 255, 255, 0.6);
+
+%MenuPosition {
+  position: fixed;
+  top: 5%;
+  left: 2%;
+}
+
+.menu-button {
+  @extend %MenuPosition;
+  border-radius: 1em;
+  color: $secondary_color;
+  background: $primary_color;
+  border: 0;
+
+  padding: 0.75rem;
+  display: flex;
+  place-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  &:hover {
+    color: $primary_color;
+    background: $secondary_color;
+  }
+}

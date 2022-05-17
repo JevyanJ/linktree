@@ -46,19 +46,17 @@ function rrss_button(element) {
 
 export default function LinkTree() {
   return (
-    <div>
-      <div class="content">
-        <img src={avatar} class="profile-pic" alt="profile pic" />
-        <a
-          href="https://www.twitch.tv/jevyanj"
-          target="_blank"
-          class="username"
-          rel="noopener noreferrer"
-        >
-          @JevyanJ
-        </a>
-        <div class="links">{rrss.map(rrss_button)}</div>
-      </div>
+    <div class="content">
+      <img src={avatar} class="profile-pic" alt="profile pic" />
+      <a
+        href="https://www.twitch.tv/jevyanj"
+        target="_blank"
+        class="username"
+        rel="noopener noreferrer"
+      >
+        @JevyanJ
+      </a>
+      <div class="links">{rrss.map(rrss_button)}</div>
     </div>
   );
 }

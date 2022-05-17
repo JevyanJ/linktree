@@ -1,0 +1,55 @@
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    -60deg,
+    rgb(0, 4, 255) 50%,
+    rgb(204, 51, 191) 50%
+  );
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.22),
+    0px 41.7776px 33.4221px rgba(0, 0, 0, 0.158148),
+    0px 22.3363px 17.869px rgba(0, 0, 0, 0.131144),
+    0px 12.5216px 10.0172px rgba(0, 0, 0, 0.11),
+    0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0888564),
+    0px 2.76726px 2.21381px rgba(0, 0, 0, 0.061852);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 2em 4em;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}

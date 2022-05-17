@@ -17,6 +17,7 @@ class Setup extends Component {
   }
 
   onMouseMove(e) {
+    this.updateDimensions();
     this.setState({
       x: e.nativeEvent.offsetX,
       y: e.nativeEvent.offsetY
@@ -42,7 +43,6 @@ class Setup extends Component {
     const width_pc = (x * 100) / width;
     const heigth_pc = (y * 100) / height;
     const data = Data(width_pc, heigth_pc);
-
     return (
       <div id="all">
         <h1 id="title">Setup</h1>
@@ -54,7 +54,13 @@ class Setup extends Component {
             onMouseMove={this.onMouseMove}
           />
           <div id="setup-info">
-            {data.title && <h1>{data.title}</h1>}
+            {data.title && (
+              <div>
+                <h1>{data.title}</h1>
+                <hr width="75%" noshade="noshade" />
+              </div>
+            )}
+
             <div>
               {data.txt.map(element => (
                 <p>{element} </p>

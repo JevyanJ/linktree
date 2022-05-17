@@ -1,0 +1,40 @@
+@import "../../styles/variables.scss";
+
+.menu {
+  @extend %MenuPosition;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  background-color: $primary_color;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 1.5em;
+}
+
+#link {
+  color: #eee;
+  text-decoration: none;
+  font-size: 2vh;
+  font-family: $primary_font_family;
+  transition: 0.2s all ease-in-out;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin: 1vh;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+
+  &:hover {
+    transition: 0.2s all ease-in-out;
+    color: $secondary_color;
+  }
+  #element {
+    display: flex;
+    align-items: center;
+    column-gap: 1vh;
+  }
+}
