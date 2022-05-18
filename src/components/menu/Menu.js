@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 const items = [
   {
-    name: "LINKS",
+    name: "LinkTree",
     address: "/",
     icon: "link"
   },
   {
-    name: "SETUP",
+    name: "Setup",
     address: "/setup",
     icon: "computer"
   }
