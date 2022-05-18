@@ -97,9 +97,8 @@ const zones = [
 
 const zone_default = {
   img: img_me,
-  title: "",
   alt: "En mi setup. Yo vestido de palmera con gafas de sol mirando a cámara",
-  txt: ["Pasa el puntero por encima para ver los detalles"]
+  txt: ["Pasa el puntero por encima"]
 };
 function between(x, interval) {
   return x >= interval[0] && x <= interval[1];
