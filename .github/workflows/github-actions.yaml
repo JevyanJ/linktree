@@ -9,18 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - id: Install yarn
+      - name: "Install yarn"
         uses: borales/actions-yarn@v2.3.0
         with:
           cmd: install # will run `yarn install` command
-      - id: Build
+      - name: Build
         uses: borales/actions-yarn@v2.3.0
         with:
           cmd: build # will run `yarn build` command
-      - id: GCP Auth
+      - name: "GCP Auth"
         uses: "google-github-actions/auth@v0"
         with:
           credentials_json: "${{ secrets.GCP_SERVICE_ACCOUNT }}"
-      - id: Action
-        name: "Use gcloud CLI"
+      - name: Action
         run: "gcloud info"
