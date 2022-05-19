@@ -25,4 +25,4 @@ jobs:
       - name: Upload web
         run: |
           cd build
-          gsutil cp -r . gs://secrets.BUCKET/
+          gsutil cp -r . gs://${{ secrets.BUCKET }}/
