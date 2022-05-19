@@ -3,8 +3,9 @@
 Just my personal web.
 
 Current sections:
-    - [LinkTree](https://jevyanj.com/home)
-    - [My setup](https://jevyanj.com/setup)
+
+- [LinkTree](https://jevyanj.com/home)
+- [My setup](https://jevyanj.com/setup)
 
 ## HOW TO
 
