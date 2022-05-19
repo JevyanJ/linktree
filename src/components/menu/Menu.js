@@ -15,9 +15,9 @@ const items = [
   }
 ];
 
-export default function Menu() {
+export default function Menu(version) {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-
+  console.log(version);
   const handleNavExpanded = () => {
     setIsNavExpanded(!isNavExpanded);
   };
@@ -32,6 +32,7 @@ export default function Menu() {
             </div>
           </Link>
         ))}
+      {isNavExpanded && <div id="menu-footer">Ver: {version["version"]}</div>}
       <button className="menu-button" onClick={handleNavExpanded}>
         <i class="material-icons">menu</i>
       </button>

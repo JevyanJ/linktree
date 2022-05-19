@@ -7,6 +7,7 @@ import LinkTree from "./components/linktree/LinkTree";
 import Setup from "./components/setup/Setup";
 import Menu from "./components/menu/Menu";
 
+const { version } = require("../package.json");
 function App() {
   return (
     <div className="App">
@@ -14,7 +15,7 @@ function App() {
       <div class="bg bg2"></div>
       <div class="bg bg3"></div>
       <BrowserRouter>
-        <Menu />
+        <Menu version={version} />
         <Routes>
           <Route exact path="/home" element={<LinkTree />} />
           <Route exact path="/setup" element={<Setup />} />
