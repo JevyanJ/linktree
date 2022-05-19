@@ -1,15 +1,28 @@
-# LinkTree
+# Web
 
-Just my LinkTree web
+Just my personal web.
 
-## Uplodad to GCS
+Current sections:
+    - [LinkTree](https://jevyanj.com/home)
+    - [My setup](https://jevyanj.com/setup)
 
-```sh
-yarn build
-cd build
-gsutil rm -a gs://<Bucket name>/**
-gsutil cp -r . gs://<Bucket name>/
-```
+## HOW TO
+
+- Launch locally
+
+    ```sh
+    yarn install
+    yarn start
+    ```
+
+- Uplodad to GCP
+
+    ```sh
+    yarn build
+    cd build
+    gsutil rm -a gs://<Bucket name>/**
+    gsutil cp -r . gs://<Bucket name>/
+    ```
 
 ## References
 
