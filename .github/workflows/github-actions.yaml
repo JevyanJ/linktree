@@ -18,7 +18,6 @@ jobs:
         with:
           cmd: build # will run `yarn build` command
       - id: GCP Auth
-        id: "auth"
         uses: "google-github-actions/auth@v0"
         with:
           credentials_json: "${{ secrets.GCP_SERVICE_ACCOUNT }}"
