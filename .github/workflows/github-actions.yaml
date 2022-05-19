@@ -21,5 +21,7 @@ jobs:
         uses: "google-github-actions/auth@v0"
         with:
           credentials_json: "${{ secrets.GCP_SERVICE_ACCOUNT }}"
-      - name: Action
-        run: "gcloud info"
+      - name: Upload web
+        run: |
+          cd build
+          gsutil cp -r . gs://jevyanj-com-website/
