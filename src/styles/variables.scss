@@ -10,6 +10,12 @@ $background_color: rgba(255, 255, 255, 0.6);
   left: 2%;
 }
 
+@media screen and (max-width: 550px) {
+  %MenuPosition {
+    left: 5%;
+  }
+}
+
 .menu-button {
   @extend %MenuPosition;
   border-radius: 1em;
