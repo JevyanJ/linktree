@@ -7,9 +7,11 @@ Just my LinkTree web
 ```sh
 yarn build
 cd build
-gsutil cp -r . gs://jevyanj-com-website/
+gsutil rm -a gs://<Bucket name>/**
+gsutil cp -r . gs://<Bucket name>/
 ```
 
 ## References
 
 - [LinkFree](https://github.com/MichaelBarney/LinkFree)
+- [How to build a Responsive 📱 React Navigation Menu with Styled-Components](https://dev.to/hyggedev/how-to-build-a-responsive-react-navigation-menu-with-styled-components-3682)
