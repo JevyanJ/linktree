@@ -2,8 +2,7 @@ name: Deploy web
 on:
   push:
     branches:
-      #- master
-      - setup-page
+      - master
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -26,4 +25,4 @@ jobs:
       - name: Upload web
         run: |
           cd build
-          gsutil cp -r . gs://jevyanj-com-website/
+          gsutil cp -r . gs://secrets.BUCKET/

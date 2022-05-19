@@ -7,8 +7,8 @@ Just my LinkTree web
 ```sh
 yarn build
 cd build
-gsutil rm -a gs://jevyanj-com-website/**
-gsutil cp -r . gs://jevyanj-com-website/
+gsutil rm -a gs://<Bucket name>/**
+gsutil cp -r . gs://<Bucket name>/
 ```
 
 ## References
